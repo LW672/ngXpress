@@ -11,7 +11,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  // connection URL moved to prisma.config.ts per Prisma v7 requirements
 }
 
 model User {
